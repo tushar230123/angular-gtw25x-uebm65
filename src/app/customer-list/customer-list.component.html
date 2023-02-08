@@ -1,0 +1,26 @@
+<h2 style="color:red">Products</h2>
+<div *ngFor="let customer of customers" style="background-color:cyan">
+  <h2>
+    <a [title]="customer.name + ' details'"> {{ customer.id }}</a>
+  </h2>
+  <p *ngIf="customer.first_name">Name : {{ customer.first_name }}</p>
+  <p>{{ productItem.price }}</p>
+  <button type="button" (click)="share()">Share and care!!!!</button>
+  <app-product-alerts></app-product-alerts>
+  <br />
+</div>
+
+<hr />
+<br /><br />
+<br />
+<h2>Customer Data</h2>
+<div>
+  <!-- A stylish table using css -->
+  <!-- *ngFor to iterate through customers data -->
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
