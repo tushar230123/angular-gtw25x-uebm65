@@ -1,10 +1,12 @@
 <h2 style="color:red">Products</h2>
 <div *ngFor="let customer of customers" style="background-color:cyan">
   <h2>
-    <a [title]="customer.name + ' details'"> {{ customer.id }}</a>
+    <a [title]="customer.first_name + ' details'">
+      {{ customer.customer_id }}</a
+    >
   </h2>
   <p *ngIf="customer.first_name">Name : {{ customer.first_name }}</p>
-  <p>{{ productItem.price }}</p>
+  <p>{{ customer.first_name }}</p>
   <button type="button" (click)="share()">Share and care!!!!</button>
   <app-product-alerts></app-product-alerts>
   <br />

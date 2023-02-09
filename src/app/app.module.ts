@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { CustomersListCompjjonent } from './customer-list/customer-list.component';
+import { CustomersListComponent } from './customer-list/customer-list.component';
 
 @NgModule({
   imports: [
